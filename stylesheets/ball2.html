@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ellipse</title>
+	<style>
+        body{
+        	background-color: #F9F9F9;
+        }
+        .f{
+                width:150px;
+                height:142px;
+                margin: 0 auto;
+                -webkit-animation-name: updown;
+                -webkit-animation-duration: 2s;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-iteration-count: infinite;
+                /*transition: 1s;*/
+        }
+        @-webkit-keyframes updown{
+                to{
+                        -webkit-transform: translateY(220px);
+                }
+        }
+        .f div{
+        	margin: 0 auto;
+        	width: 75px;
+        	height: 70px;
+                border-radius: 75px;
+                /*margin-left: 200px;*/
+                /*background-position: center;*/
+        	background: pink;
+        	-webkit-transform-origin:center 220px;
+        	-webkit-animation-duration: 4s;
+        	-webkit-animation-timing-function: linear;
+        	-webkit-animation-iteration-count: infinite;
+        	-webkit-animation-name: myname;
+        }
+        @-webkit-keyframes myname{
+        	to{
+        		-webkit-transform: rotate(1turn);
+        	}
+        }
+	</style>
+</head>
+<body>
+	<div class="f">
+            <div></div>       
+        </div>
+</body>
+</html>

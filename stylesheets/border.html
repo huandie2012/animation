@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>翻页动画</title>
+	<style>
+        .fanye{
+        	margin: 50px 400px;
+        	width: 500px;
+        	height: 400px;
+        	background-color: pink;
+            position: relative;
+        	/*top: 0px;*/
+        	/*left: 0px;*/
+            overflow: hidden;
+            /*z-index: 10;*/
+            /*background-image: url('../img/1.jpg');*/
+        }
+        .fanye div{
+        	position: absolute;
+        	width: 0;
+        	height: 0;
+        	border-color: #6DD2FD white;
+        	border-style: solid;
+        	border-width: 0;
+        	-webkit-transition-timing-function: ease-in;
+            -webkit-transition-duration: 0.5s;
+            right: 0; 
+        }
+        .fanye:hover div{
+        	border-right-width: 100px;
+            border-bottom-width: 100px;
+        }
+        /*img{
+        	display: inline-block;
+        	position: absolute;
+        	top: 0px;
+        	left: 0px;
+        	width: 500px;
+        	height: 400px;
+        	z-index: -11;
+        }*/
+	</style>
+</head>
+<body>
+	<div class="fanye">
+	    
+		<div>
+		</div>
+		<!-- <img src="../img/1.jpg" alt="/" class="imhh"> -->
+	</div>
+	
+</body>
+</html>

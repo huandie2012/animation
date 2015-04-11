@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation-delay</title>
+	<style>
+  	   *{
+  	   	 margin: 0;
+  	   	 padding: 0;
+  	   }
+       .outer{
+       	 margin-left: 100px;
+       	 margin-top: 100px;
+       	 border: 1px solid pink;
+       	 width: 700px;
+       	 height: 300px;
+       }
+       .out{
+       	 margin: 100px 300px;
+       	 width: 200px;
+         height: 110px;
+         /*background-color: pink;*/
+       }
+       .out div{
+       	 display: inline-block;
+       	 height: 60px;
+       	 width: 10px;
+       	 background-color: #48BEEF;
+         /*transition: 1s;*/
+       }
+       .line1{
+        -webkit-animation-name: myname;
+        -webkit-animation-duration: 1.2s;
+        /*-webkit-animation-delay: -0.9s;*/
+        /*-webkit-animation-direction: alternate;*/
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+       }
+       @-webkit-keyframe myname{
+         0%,40%,100%{
+           -webkit-transform: scaleY(.4);
+         }
+         20%{
+           -webkit-transform: scaleY(1);
+         }
+       }
+       .line2{
+        -webkit-animation-name: myname;
+        -webkit-animation-duration: 1.2s;
+        /*-webkit-animation-direction: alternate;*/
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        /*-moz-animation-name: myname;
+        -o-animation-name: myname;*/
+        -webkit-animation-delay: -1.1s;
+        /*-moz-animation-delay: -1.1s;
+        -o-animation-delay: -1.1s;*/
+        zoom: 1;
+        /*-webkit-transition: 1s;*/
+        /*transition: 0.03s;
+        transition: 0.03s;*/
+       }
+       @-webkit-keyframes myname{
+         0%,40%,100%{
+           -webkit-transform: scaleY(.4);
+         }
+         20%{
+           -webkit-transform: scaleY(1);
+         }
+       }
+       /*@-o-keyframe myname{
+         0%,40%,100%{
+           transform: scaleY(.4);
+         }
+         20%{
+           transform: scaleY(1);
+         }
+       }
+       @-moz-keyframe myname{
+         0%,40%,100%{
+           transform: scaleY(.4);
+         }
+         20%{
+           transform: scaleY(1);
+         }
+       }
+        @keyframe myname{
+         0%,40%,100%{
+           transform: scaleY(.4);
+         }
+         20%{
+           transform: scaleY(1);
+         }
+       }*/
+       .line3{
+        -webkit-animation-name: myname;
+        -webkit-animation-duration: 1.2s;
+        -webkit-animation-delay: -1.0s;
+        /*-webkit-animation-direction: alternate;*/
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+       }
+       @-webkit-keyframe myname{
+         0%,40%,100%{
+           -webkit-transform: scaleY(.4);
+         }
+         20%{
+           -webkit-transform: scaleY(1);
+         }
+       }
+       .line4{
+        -webkit-animation-name: myname;
+        -webkit-animation-duration: 1.2s;
+        -webkit-animation-delay: -0.9s;
+        /*-webkit-animation-direction: alternate;*/
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+       }
+       @-webkit-keyframe myname{
+         0%,40%,100%{
+           -webkit-transform: scaleY(.4);
+         }
+         20%{
+           -webkit-transform: scaleY(1);
+         }
+       }
+       .line5{
+        -webkit-animation-name: myname;
+        -webkit-animation-duration: 1.2s;
+        -webkit-animation-delay: -0.8s;
+        /*-webkit-animation-direction: alternate;*/
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+       }
+       @-webkit-keyframe myname{
+         0%,40%,100%{
+           -webkit-transform: scaleY(.4);
+         }
+         20%{
+           -webkit-transform: scaleY(1);
+         }
+       }
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="out">
+			  <div class="line1"></div>
+		    <div class="line2"></div>
+		    <div class="line3"></div>
+		    <div class="line4"></div>
+		    <div class="line5"></div>
+		</div>
+	</div>
+</body>
+</html>

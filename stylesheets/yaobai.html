@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>摆钟</title>
+	<style>
+        .fth{
+
+        }
+        .fth div{
+        	width: 50px;
+        	height: 50px;
+        	border-radius: 75px;
+        	background-color: pink;
+        	-webkit-transform-origin: center 300px;
+        	-webkit-animation-name: myname;
+        	-webkit-animation-duration: 2s;
+        	-webkit-animation-direction: alternate;
+        	/*-webkit-animation-name: myname;*/
+        }
+        @-webkit-keyframes myname{
+        	to{
+        		-webkit-transform: rotate(45deg);
+        	}
+        }
+	</style>
+</head>
+<body>
+	<figure>
+		<div class="fth">
+			<div></div>
+		</div>
+	</figure>
+</body>
+</html>

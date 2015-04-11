@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>环形动画</title>
+	<style>
+        .out{
+        	margin: 50px 100px;
+        	border: 2px solid pink;
+        	width: 300px;
+        	height: 300px;
+        }
+        .outer{
+        	margin: 80px 80px;
+        	width: 100px;
+        	height: 100px;
+        	border: 20px solid #E6E6E6;
+        	border-left: 20px solid pink;
+        	border-radius: 75px;
+        	-webkit-animation-name: myname;
+            -webkit-animation-duration: 1s;
+            /*-webkit-animation-direction: alternate;*/
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+        @-webkit-keyframes myname{
+        	from{
+        		-webkit-transform: rotate(0);
+        	}
+        	to{
+        		-webkit-transform: rotate(360deg);
+        	}
+        }
+	</style>
+</head>
+<body>
+	<div class="out">
+		<div class="outer">
+			
+		</div>
+	</div>
+</body>
+</html>
