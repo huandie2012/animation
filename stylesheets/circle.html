@@ -2,42 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>环形动画</title>
+	<title>ball</title>
 	<style>
-        .out{
-        	margin: 50px 100px;
-        	border: 2px solid pink;
-        	width: 300px;
-        	height: 300px;
+        body{
+        	/*background-size: 100%;*/
+        	/*background: url("../img/2.jpg") no-repeat center; */
+        	background-color: #F9F9F9;
         }
-        .outer{
-        	margin: 80px 80px;
+        div{
+        	margin: 300px 300px;
         	width: 100px;
         	height: 100px;
-        	border: 20px solid #E6E6E6;
-        	border-left: 20px solid pink;
+        	background: pink;
+        	/*background-position: 100px 50px;*/
         	border-radius: 75px;
+        	transform-origin: 350px center;
+        	-webkit-animation-duration: 6s;
+        	-webkit-animation-timing-function: linear;
+        	-webkit-animation-iteration-count: infinite;
         	-webkit-animation-name: myname;
-            -webkit-animation-duration: 1s;
-            /*-webkit-animation-direction: alternate;*/
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
+        	/*-webkit-animation-name: myname;*/
         }
         @-webkit-keyframes myname{
-        	from{
+        	/*from{
         		-webkit-transform: rotate(0);
-        	}
+        	}*/
         	to{
-        		-webkit-transform: rotate(360deg);
+        		-webkit-transform: rotate(1turn);
         	}
         }
 	</style>
 </head>
 <body>
-	<div class="out">
-		<div class="outer">
-			
-		</div>
-	</div>
+	<div></div>
 </body>
 </html>
